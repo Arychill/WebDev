@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft – Официальный сайт</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .nav-bar {
+            display: flex;
+            align-items: center;
+            padding: 12px 24px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .nav-link {
+            color: #262626;
+            text-decoration: none;
+            font-size: 15px;
+            margin-right: 30px;
+        }
+
+        .hero-section {
+            padding: 100px 10% 150px;
+            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+                        url('microsoft.avif') 
+                        center/cover;
+            position: relative;
+        }
+
+        .content-wrapper {
+            max-width: 500px;
+            color: white;
+        }
+
+        .main-heading {
+            font-size: 42px;
+            font-weight: 300;
+            margin-bottom: 28px;
+            text-align: left;
+            line-height: 1.2;
+        }
+
+        .description {
+            font-size: 20px;
+            margin-bottom: 40px;
+            line-height: 1.5;
+        }
+
+        .cta-button {
+            background: #0067b8;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 2px;
+            display: inline-block;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #005da6;
+        }
+        .products-section {
+            padding: 60px 24px;
+            background: #f8f9fa;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: white;
+            padding: 30px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .product-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #262626;
+        }
+
+        .product-description {
+            color: #5a5a5a;
+            margin-bottom: 24px;
+            line-height: 1.5;
+        }
+
+        .product-button {
+            display: inline-block;
+            color: #0067b8;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .product-button:hover {
+            color: #004578;
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="nav-bar">
+        <a href="#" class="nav-link"><font size = 4px><b>Microsoft</b></font></a>
+        <a href="#" class="nav-link">Microsoft 365</a>
+        <a href="#" class="nav-link">Office</a>
+        <a href="#" class="nav-link">Windows</a>
+        <a href="#" class="nav-link">Поддержка</a>
+    </nav>
+
+    <section class="hero-section">
+        <div class="content-wrapper">
+            <h1 class="main-heading">Добивайтесь необычного</h1>
+            <p class="description">
+                Microsoft 365 предоставляет облачное хранилище, безопасность и Microsoft Copilot 
+                в ваших любимых приложениях. И все это в одном плане.
+            </p>
+            <a href="#" class="cta-button">Купить Microsoft 365</a>
+        </div>
+    </section>
+    <section class="products-section">
+        <div class="products-grid">
+            <div class="product-card">
+                <h3 class="product-title">Microsoft Edge</h3>
+                <p class="product-description">
+                    Потрясающая производительность, больше конфиденциальности, 
+                    продуктивности и дополнительных возможностей.
+                </p>
+                <a href="#" class="product-button">Скачать</a>
+            </div>
+
+            <div class="product-card">
+                <h3 class="product-title">Microsoft OneDrive</h3>
+                <p class="product-description">
+                    Сохраняйте свои файлы и фотографии на OneDrive — они будут 
+                    доступны с любого устройства и где угодно.
+                </p>
+                <a href="#" class="product-button">Подробнее</a>
+            </div>
+
+            <div class="product-card">
+                <h3 class="product-title">OneNote</h3>
+                <p class="product-description">
+                    Приведите свои заметки и дела в порядок.
+                </p>
+                <a href="#" class="product-button">Узнать больше</a>
+            </div>
+
+            <div class="product-card">
+                <h3 class="product-title">Outlook для iOS и Android</h3>
+                <p class="product-description">
+                    Будьте на связи. Организовывайте. Успевайте больше.
+                </p>
+                <a href="#" class="product-button">Скачать</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

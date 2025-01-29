@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram — Вход или регистрация</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 40px 40px 20px;
+            border: 1px solid #dbdbdb;
+            text-align: center;
+            width: 348px;
+        }
+        .logo {
+            font-family: 'Billabong', cursive;
+            font-size: 48px;
+            margin: 20px 0;
+            background: linear-gradient(45deg, #405DE6, #833AB4, #E1306C);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        input {
+            width: 95%;
+            padding: 9px 8px;
+            margin: 6px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            background: #fafafa;
+            font-size: 12px;
+        }
+        .login-btn {
+            width: 100%;
+            padding: 8px;
+            background: #0095f6;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .divider {
+            margin: 20px 0;
+            color: #8e8e8e;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+        }
+        .divider::before, .divider::after {
+            content: "";
+            flex: 1;
+            border-top: 1px solid #dbdbdb;
+            margin: 0 10px;
+        }
+        .fb-login {
+            color: #385185;
+            font-size: 14px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #262626;
+        }
+        .app-links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .app-links img {
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">Instagram</div>
+        <input type="text" placeholder="Эл. адрес">
+        <input type="password" placeholder="Пароль">
+        <button class="login-btn">Войти</button>
+        <div class="divider">ИЛИ</div>
+        <a href="#" class="fb-login">Войти через Facebook</a>
+        <div style="margin: 15px 0;">
+            <a href="#" style="font-size: 12px; color: #00376b;">Забыли пароль?</a>
+        </div>
+        <div class="footer">
+            У вас ещё нет аккаунта? <a href="#" style="color: #0095f6; font-weight: bold;">Зарегистрироваться</a>
+        </div>
+        <div class="app-links">
+            <!-- Добавьте ссылки на изображения магазинов -->
+            <a href="https://www.appStore.com"><img src="appstore.png" alt="App Store"></a>
+            <a href="https://googlePlay.com"><img src="googleplay.png" alt="Google Play"></a>
+        </div>
+    </div>
+</body>
+</html>
