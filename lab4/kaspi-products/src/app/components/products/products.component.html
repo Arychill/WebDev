@@ -1,0 +1,25 @@
+<div class="product-list">
+    <div class="product-card" *ngFor="let product of products">
+      <h3>{{ product.name }}</h3>
+      
+      <div class="product-gallery">
+        <img *ngFor="let img of product.gallery" [src]="img" alt="{{ product.name }}">
+      </div>
+      
+      
+  
+      <p>{{ product.description }}</p>
+      <p>⭐ {{ product.rating }} / 5</p>
+  
+      <a [attr.href]="product.link" target="_blank">Подробнее</a>
+  
+      <div class="share-buttons">
+        <a [attr.href]="'https://wa.me/?text=' + encodeURI(product.link)" target="_blank">
+            Share via WhatsApp
+          </a>
+          <a [attr.href]="'https://t.me/share/url?url=' + encodeURI(product.link)" target="_blank">
+            Share via Telegram
+        </a>
+      </div>
+    </div>
+  </div>

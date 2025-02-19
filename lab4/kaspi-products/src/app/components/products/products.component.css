@@ -1,0 +1,47 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .product-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .gallery img {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+  }
+  
+  .share-buttons a {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    background: #25d366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .share-buttons a:last-child {
+    background: #0088cc;
+  }
+  .product-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Расстояние между изображениями */
+  }
+  
+  .product-gallery img {
+    max-width: 100px;  /* Максимальная ширина */
+    max-height: 150px; /* Максимальная высота */
+    width: auto;  /* Сохраняет оригинальные пропорции */
+    height: auto; /* Сохраняет оригинальные пропорции */
+    object-fit: contain; /* Вписывает изображение без обрезки */
+    border-radius: 8px; /* Закруглённые углы (по желанию) */
+  }
